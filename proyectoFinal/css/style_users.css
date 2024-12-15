@@ -1,0 +1,72 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos del encabezado */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .logo {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Estilos de la navegación */
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Estilos del banner */
+.banner {
+    background-color: #ffa500;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.banner img {
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+/* Información del banner */
+.banner .info h2 {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+/* Contenedor principal */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilos para las secciones de descripción y proyectos */
+.description,
+.projects {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Estilos para las imágenes en proyectos */
+.projects img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}

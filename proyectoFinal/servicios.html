@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_servicios.css">
+    <title>General Services</title>
+        <link rel="shortcut icon" href="https://cdn-icons-png.freepik.com/256/769/769198.png?semt=ais_hybrid"
+            type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">General<span>Services</span></a>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="register.html">Registrar</a>
+        </nav>
+    </header>
+    <div class="categorias">
+        <label for="categoria">
+            <span id="category"> <b>Categoria:</b></span>
+            <select id="categoria" onchange="filtrarPorCategoria()" name="categoria" aria-label="Selecciona una categoría">
+                <option value="todas">Todos</option>                
+                <option value="pintura">Pintura</option>
+                <option value="reparacion-electrica">Reparación eléctrica</option>
+                <option value="plomeria">Plomería</option>
+                <option value="construccion">Construcción</option>
+                <option value="jardineria">Jardinería</option>
+                <option value="mantenimiento-equipos">Mantenimiento de equipos</option>
+                <option value="limpieza">Limpieza</option>
+                <option value="albanileria">Albañilería</option>
+                <option value="carpinteria">Carpintería</option>
+                <option value="reparacion-techos">Reparación de techos</option>
+                <option value="mudanzas">Mudanzas</option>
+                <option value="instalaciones">Instalaciones (aire acondicionado, cámaras de seguridad, etc.)</option>
+                <option value="mantenimiento-zonas-verdes">Mantenimiento de zonas verdes</option>
+                <option value="herreria">Herrería</option>
+                <option value="remodelaciones">Remodelaciones</option>
+                <option value="decoracion-interiores">Decoración de interiores</option>
+                <option value="desinfeccion">Desinfección y control de plagas</option>
+                <option value="reparacion-electrodomesticos">Reparación de electrodomésticos</option>
+            </select>
+        </label>
+    </div>
+        <div id="lista_usuarios"></div>
+        <script src="js/consumer.js"></script>
+</body>
+
+
+</html>

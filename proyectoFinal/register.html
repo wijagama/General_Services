@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Services</title>
+    <link rel="stylesheet" href="/css/style_registro.css">
+        <link rel="shortcut icon" href="https://cdn-icons-png.freepik.com/256/769/769198.png?semt=ais_hybrid"
+            type="image/x-icon">
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Registro de Servicios</h2>
+            <form id="registerForm" enctype="multipart/form-data">
+                <label for="name">
+                    <span>Nombre:</span>
+                    <input type="text" id="name" name="name" required>
+                </label>
+
+                <label for="email">
+                    <span>Correo:</span>
+                    <input type="email" id="email" name="email" required>
+                </label>
+
+                <label for="phone">
+                    <span>Teléfono:</span>
+                    <input type="tel" id="phone" name="phone">
+                </label>
+
+                <label for="summary">
+                    <span>Resumen de lo que haces:</span>
+                    <textarea id="summary" name="summary" rows="4" style="resize: none;"></textarea>
+                </label>
+
+                <label for="specialty">
+                    <span>Especialidad:</span>
+                    <select id="specialty" name="servicios">
+                        <option value="pintura">Pintura</option>
+                        <option value="reparacion-electrica">Reparación eléctrica</option>
+                        <option value="plomeria">Plomería</option>
+                        <option value="construccion">Construcción</option>
+                        <option value="jardineria">Jardinería</option>
+                        <option value="mantenimiento-equipos">Mantenimiento de equipos</option>
+                        <option value="limpieza">Limpieza</option>
+                        <option value="albanileria">Albañilería</option>
+                        <option value="carpinteria">Carpintería</option>
+                        <option value="reparacion-techos">Reparación de techos</option>
+                        <option value="mudanzas">Mudanzas</option>
+                        <option value="instalaciones">Instalaciones (aire acondicionado, cámaras de seguridad, etc.)</option>
+                        <option value="mantenimiento-zonas-verdes">Mantenimiento de zonas verdes</option>
+                        <option value="herreria">Herrería</option>
+                        <option value="remodelaciones">Remodelaciones</option>
+                        <option value="decoracion-interiores">Decoración de interiores</option>
+                        <option value="desinfeccion">Desinfección y control de plagas</option>
+                        <option value="reparacion-electrodomesticos">Reparación de electrodomésticos</option>
+                    </select>
+                </label>
+                <label for="file">
+                    <span>Selecciona una foto de perfil:</span>
+                    <input type="file" id="file" name="file" accept="image/*">
+                </label>
+
+                <button id="submit" type="submit" class="submit">Registrar</button>
+            </form>
+            <p id="resultado"></p>
+            <p id="reloading"></p>
+        </div>
+    </div>
+
+    <script src="/js/register.js"></script>
+</body>
+</html>

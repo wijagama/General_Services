@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Condensed', 'Nunito', sans-serif;
+    line-height: 1.6;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+section {
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;               
+    color: #ffa500;                
+    text-transform: uppercase;     
+    margin-bottom: 30px;           
+    font-weight: bold;             
+    letter-spacing: 2px;           
+}
+
+
+.boton {
+    display: inline-block;
+    margin-top: 10px;
+    background: #ffa500;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background: #e59400;
+    color: #fff;
+    cursor: pointer;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffa500;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+header .logo span {
+    color: #000;
+}
+
+header .menu a {
+    color: #000;
+    font-size: 1.6rem;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+header .menu a:hover {
+    color: #fff;
+}
+
+#lista_usuarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem; /* Mayor separación entre tarjetas */
+}
+
+.usuario-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Ancho más amplio */
+    min-height: 450px; /* Altura mínima mayor */
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.usuario-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.usuario-card h2 {
+    color: #ff990a;
+    margin-bottom: 1rem;
+    font-size: 1.8rem; /* Título más grande */
+}
+
+.usuario-card p {
+    font-size: 1.2rem; /* Texto descriptivo más grande */
+    color: #666;
+    margin: 1rem 0;
+}
+
+.usuario-card button {
+    margin-top: 1rem;
+    background-color: #eaaa29;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem; /* Botón más llamativo */
+    transition: background-color 0.3s ease;
+}
+
+.usuario-card button:hover {
+    background-color: #f7e153;
+}
+
+.usuario-card img {
+    display: block;
+    margin: 10px auto;
+    width: 250px; /* Ancho mayor */
+    height: 250px; /* Altura ajustada */
+    border-radius: 50%;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3); /* Mayor profundidad en la sombra */
+    object-fit: cover; /* Asegura que la imagen ocupe toda el área sin distorsión */
+}
+
+
+.categorias{
+   margin: 20px;
+}
+
+.categorias span b{
+   text-transform: uppercase;
+   color: #ff990a;
+   font-size: 14px;
+}
+
+.categorias select {
+    background-color: #efefef91; /* Color de fondo suave */
+    color: #000000; /* Texto oscuro para buena legibilidad */
+    font-family: 'Poppins', sans-serif; /* Fuentes más modernas */
+    padding: 5px 8px; /* Relleno para que el selector sea más cómodo */
+    border-radius: 8px; /* Bordes redondeados para un estilo más amigable */
+    border: 1px solid #888; /* Borde suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para dar un efecto de profundidad */
+    font-size: 14px; /* Tamaño de fuente adecuado */
+    width: 300px; /* Ocupa todo el espacio disponible */
+    transition: all 0.3s ease; /* Transición suave para los cambios */
+}
+
+/* Efecto cuando el select es seleccionado */
+.categorias select:focus {
+    border-color: #ff990a; /* Color de borde cuando está seleccionado */
+    outline: none; /* Quitamos el borde por defecto del navegador */
+    box-shadow: 0 0 5px #ff990a; /* Sombra de enfoque */
+}
+
+/* Efecto de hover */
+.categorias select:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el cursor */
+}
+
