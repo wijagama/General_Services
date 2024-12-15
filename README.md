@@ -59,11 +59,5 @@ Este proyecto fue desarrollado como una solución práctica para facilitar el ac
 
 ---
 
-## 🔗 Contribuye o Explora
-
-- **Repositorio GitHub:** (Añade aquí el enlace del repositorio si está disponible)  
-- **Contacto:** Para más información, escribe a **[tu_correo_ejemplo@gmail.com](mailto:tu_correo_ejemplo@gmail.com)**.
-
----
 
 > _"Empoderamos a las personas conectando necesidades con soluciones."_
